@@ -1,56 +1,61 @@
 data <- airquality
-View(airquality)
-# Summary Air Quality
-SummaryAirQuality <- summary(airquality)
-SummaryAirQuality
-library(PerformanceAnalytics)
 
-# Soal 2 dan 3
-# sebaran data ozone
-# Atribute Ozone tipe data Numeric berisi data rata-rata konsentrasi Ozone di Pulau Roosevelt
-boxplotOzone2 <- chart.Boxplot(data$Ozone)
-boxplotOzone <- boxplot(data$Ozone)
-histOzone <- hist(data$Ozone)
+library(dplyr)
+library(ggplot2)
+library(GGally)
+library(tidyverse)
+library(treemap)
+library(purrr)
 
-# sebaran data solarRadiation
-# Atribute Solar.R tipe data Numeric berisi data radiasi matahari di Central Park
-boxplotSolarRadiation <- boxplot(data$Solar.R)
-histRadiation <- hist(data$Solar.R)
+# Eksplorasi Ozon dengan Temperatur
+g1 <- ggplot(data, aes(x = Ozone, y = Temp, color = 'red')) + geom_point(alpha = .5)
+g1
 
-# sebaran data wind
-# Wind tipe data numeric berisi data rata-rata kecepatan angin di bandara LaGuardia
-boxplotWind <- boxplot(data$Wind)
-histRadation <- hist(data$Wind)
+# Semakin rendah Ozon, semakin rendah kecepatan angin
+g2 <- ggplot(data, aes(x = Ozone, y = Wind, color = 'green' )) + geom_point(alpha = .5)
+g2
 
-# sebaran data temperatur
-# Atribute Temp tipe data numeric berisi data suhu harian maksimal di bandara LaGuardia
-boxplotTemp <- boxplot(data$Temp)
-histTemp <- hist(data&Temp)
+# Semakin tinggi solar radiation, semakin tinggi temperatur
+g3 <- ggplot(data, aes(x = Solar.R, y = Temp, color = 'green' )) + geom_point(alpha = .5)
+g3
 
-# BoxplotAll
-boxplotAll <- boxplot(data$Ozone,
-                      data$Solar.R,
-                      data$Wind,
-                      data$Temp
-                      )
+# Semakin tinggi temperatur, kecepatan angin semakin rendah dan sebaliknya
+g4 <- ggplot(data, aes(x = Temp, y = Wind, color = 'green' )) + geom_point(alpha = .5)
+g4
 
-# HistAll
-# hist(x1, col='red', xlim=c(-35, 100))
-# hist(x2, col='green', add=TRUE)
-# hist(x3, col='blue', add=TRUE)
 
-hist(data$Ozone, col = 'red',xlim=c(0, 500))
-hist(data$Solar.R, col= 'green', add=TRUE)
-hist(data$Wind, col = 'blue', add=TRUE)
-hist(data$Temp, col = 'yellow', add=TRUE)
+# Penting
+g5 <- ggplot(data, aes(x = Month, y = Temp, color = 'green' )) + geom_point(alpha = .5)
+g5
 
-# nomor 4
-relasiBulanKeSOlarR <- plot(data$Month, data$Solar.R)
-relasiBulanKeTemperatur <- plot(data$Month, data$Temp)
-relasiTemperaturKeSolarR <- plot(data$Temp, data$Solar.R)
-relasiOzonKeSolarR <- plot(data$Ozone, data$Solar.R)
-relasiOzonKeTemp <- plot(data$Ozone, data$Temp)
+g6 <- ggplot(data, aes(x = Month, y = Solar.R, color = 'green' )) + geom_point(alpha = .5)
+g6
 
-cor(data$Month, data$Solar.R, method='pearson')
-cor.test(data$Wind,data$Temp,method='pearson')
+g7 <-  ggplot(data, aes(x = Month, y = Ozone, color = 'green' )) + geom_point(alpha = .5)
+g7
+
+
+# Hubungan linear antara suhu dan Solar Radiation
+# Soal 4
+radiasi <- data$Solar.R
+suhu <- data$Temp
+plot(radiasi, suhu)
+cor.test(radiasi, suhu)
+
+# Uji korelasi no 4
+n1= length(radiasi)-sum(is.na(radiasi))
+n1
+
+r1= 0.2758403 
+r1
+
+alpa1= 0.05
+
+batas1 = qt(1-alpa1/2, n-2)
+batas1
+
+tresh1 = c(-batas1, batas1)
+tresh
+t1 = r1/sqrt((1-r1^2)/(n1-2))
+t1
 
