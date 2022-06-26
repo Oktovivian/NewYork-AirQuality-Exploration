@@ -5,12 +5,12 @@ we tried to observe the effect of the month, solar radiation, ozone levels on te
 Airquality dataset is a dataset containing daily air quality measurements in New York from May to September 1973 for 5 months. Data sources are obtained from the New York State Department of Conservation (ozone data) and the National Weather Service (meteorological data)
 
 ## 2. variables/attributes and data types:
--	Atribute Ozone tipe data numerik berisi data rata-rata konsentrasi Ozone dalam per miliar dari pukul 13.00  - 15.00 di Pulau Roosevelt
--	Atribute Solar.R tipe data numerik berisi data radiasi matahari pada frekuensi 4000 - 7700 Angstrom dari pukul 08.00 - 12.00 di Central Park
--	Wind tipe data numerik berisi data rata-rata kecepatan angin dalam mil per jam dari pukul 07.00 sampai 10.00  di bandara LaGuardia
--	Atribute Temp tipe data numerik berisi data suhu harian maksimal dalam fahrenheit di bandara LaGuardia
--	Atribute Month tipe data numeric berisi 5 data bulan pengamatan 
--	Atribute Day tipe data numeric berisi 153 data total hari pengamatan
+* The Ozone attribute is a numeric data type containing data on the average Ozone concentration in per billion from 13:00 - 15:00 on Roosevelt Island
+* Attribute Solar.R numeric data type contains data on solar radiation at a frequency of 4000 - 7700 Angstrom from 08.00 - 12.00 in Central Park
+* Wind numeric data type contains data on the average wind speed in miles per hour from 07.00 to 10.00 at LaGuardia airport
+* The numeric data type Temp attribute contains the maximum daily temperature data in Fahrenheit at LaGuardia airport
+* Attribute Month numeric data type contains 5 months of observation data
+* The Day attribute of the numeric data type contains 153 total observation days
 
 ## 3. Boxplot
 ### Ozone
