@@ -15,7 +15,7 @@ Airquality dataset is a dataset containing daily air quality measurements in New
 ## 3. Boxplot
 ### Ozone
 ![image](https://user-images.githubusercontent.com/68942070/175799472-65a31da2-97ed-4f6a-942b-73e49afcb719.png)
-In the Ozone boxplot it can be concluded that.
+#### In the Ozone boxplot it can be concluded that.
 * The minimum value for ozone data is 1.
 * Q1 or the lower quartile of the ozone data is 18.
 * Q2 or median ozone data is 31.50.
@@ -27,7 +27,7 @@ In the Ozone boxplot it can be concluded that.
 
 ### Solar Radiation
 ![image](https://user-images.githubusercontent.com/68942070/175799473-c1911159-ab8f-40f6-87c9-e503cad91dee.png)
-In the Solar Radiation boxplot it can be concluded that.
+#### In the Solar Radiation boxplot it can be concluded that.
 * The minimum value for solar radiation data is 7.
 * Q1 or the lower quartile of the solar radiation data is 115.8.
 * Q2 or median solar radiation data is 205.
@@ -39,7 +39,7 @@ In the Solar Radiation boxplot it can be concluded that.
 
 ### Wind
 ![image](https://user-images.githubusercontent.com/68942070/175799476-d90c61d2-1546-475c-ba3f-6439a1da177c.png)
-In the Wind boxplot it can be concluded that.
+#### In the Wind boxplot it can be concluded that.
 * The minimum value for wind data is 1.7.
 * Q1 or the lower quartile of the wind data is 7.4.
 * Q2 or median wind data is 9.7.
@@ -51,7 +51,7 @@ In the Wind boxplot it can be concluded that.
 
 ### Temperature
 ![image](https://user-images.githubusercontent.com/68942070/175799480-2f474cf8-fca5-49f1-a668-fb2e537b428e.png)
-In the Temperature boxplot it can be concluded that.
+#### In the Temperature boxplot it can be concluded that.
 * The minimum value for temperature data is 56.
 * Q1 or the lower quartile of the temperature data is 72.
 * Q2 or median temperature data is 79.
