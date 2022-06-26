@@ -60,3 +60,32 @@ Airquality dataset is a dataset containing daily air quality measurements in New
 * The maximum value of temperature data is 97.
 * The temperature boxplot has no outlier data and because the median is right in the middle, the data is symmetrical.
 * The data centers tend to be closer because the distance between the median and the mean is quite close.
+
+## 4. Assumption
+Note: We add some assumptions and facts below in order to clarify and make it easier for us to choose which variables to explore
+
+![image](https://user-images.githubusercontent.com/68942070/175806457-ea9378a5-fe44-4628-b3a8-d54f542bb6ee.png)
+* Assumption 1:
+  Based on the plot above, the level of solar radiation affects the temperature level even though it appears to be not strongly related
+  
+![image](https://user-images.githubusercontent.com/68942070/175806449-6ab21db7-d62a-4ee5-af7b-478715dcd829.png)
+* Fact 1:
+  The highest temperature occurs in the 8th month (August)
+  
+![image](https://user-images.githubusercontent.com/68942070/175806439-4ae8965f-b703-4d5a-83a9-632f9ae07e0a.png)
+* Fact 2:
+  The highest level of solar radiation occurs in the 5th month (May)
+
+* Formulation of the problem:
+  Is there anything else that affects the temperature level more than solar radiation?
+  
+![image](https://user-images.githubusercontent.com/68942070/175806432-cd4d24d4-9de7-4e23-a221-08b77bd70c5c.png)
+* Assumption 2:
+  At first glance, based on the plot above, the ozone level affects the temperature level more (the higher the ozone level, the higher the temperature) than the effect   of solar radiation and is strongly related.
+
+![image](https://user-images.githubusercontent.com/68942070/175806428-72b91041-9fa1-4c38-99d0-5ef6f35474d2.png)
+* Fact 3:
+  The highest ozone levels occur in the 7th (July), 8th (August), and 9th (September) months.
+
+* Final Assumptions:
+  Based on the 3 facts and 2 assumptions above, Ozone affects the air temperature level more than solar radiation. The proof will be done on numbers 5 to 7
