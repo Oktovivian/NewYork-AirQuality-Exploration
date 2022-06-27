@@ -89,3 +89,41 @@ Note: We add some assumptions and facts below in order to clarify and make it ea
 
 * Final Assumptions:
   Based on the 3 facts and 2 assumptions above, Ozone affects the air temperature level more than solar radiation. The proof will be done on numbers 5 to 7
+  
+## 5. Linear relation between 2 variables
+### Linear relation between temperature and Solar Radiation
+![image](https://user-images.githubusercontent.com/68942070/175925641-7bbe4c75-983d-4a3b-a128-6b037927adce.png)
+![image](https://user-images.githubusercontent.com/68942070/175925656-d67d4285-23ae-45c8-bba3-a8e93eb8e66f.png)
+From the scatter plot and the correlation coefficient above, it can be seen that there is a WEAK linear relation between the concentration of solar radiation and temperature.
+
+Correlation Test:
+
+![image](https://user-images.githubusercontent.com/68942070/175925744-cb6259c9-2812-415a-a1cb-827fc1ae0924.png)
+
+![image](https://user-images.githubusercontent.com/68942070/175925765-b39583d5-ebea-479d-9749-492102065e5e.png)
+
+Conclusion: With a significance level of 5%, solar concentration and maximum temperature have a linear relation, because the t test value = 3.443678 is slightly above the threshold limit of 1.976575.
+Then, at the significance level of 0.1%, the t-test value = 3.443678 is slightly larger than the threshold, which is 3.356124
+
+### Linear relation between temperature and ozone
+
+![image](https://user-images.githubusercontent.com/68942070/175926089-0a5392a6-668c-4206-bf7f-bccac09a4e6c.png)
+
+![image](https://user-images.githubusercontent.com/68942070/175926104-36ce9b69-5917-4c79-9b81-175fa7e42a20.png)
+
+From the scatter plot and the correlation coefficient above, it can be seen that there is a linear relation between the ozone concentration and the maximum temperature.
+
+Correlation Test:
+
+![image](https://user-images.githubusercontent.com/68942070/175926200-68e6dd19-de45-4ac5-a11a-a5f17f3d488a.png)
+
+![image](https://user-images.githubusercontent.com/68942070/175926219-10731d72-f89d-4382-889c-9dae632578dd.png)
+
+Conclusion: With a significance level of 5%, ozone concentration and maximum temperature have a linear relation, because the t test value = 10,41772, far above the threshold limit of 1,980992.
+In fact, at the significance level of 0.1%, the t-test value = 10.41772, which is greater than the threshold of 3.377922.
+
+
+
+
+
+
