@@ -123,6 +123,38 @@ Conclusion: With a significance level of 5%, ozone concentration and maximum tem
 In fact, at the significance level of 0.1%, the t-test value = 10.41772, which is greater than the threshold of 3.377922.
 
 
+## 6. Linear Regression Model
+
+Y = A * X + B
+### Below is the modeling X = Solar.R and Y = Temperature
+![image](https://user-images.githubusercontent.com/68942070/175926884-c908ade2-a45b-4893-8147-3565d3c3e659.png)
+
+![image](https://user-images.githubusercontent.com/68942070/175926905-c2cb54a2-20fa-4cc3-aa5c-2a60a0ec6f2b.png)
+
+![image](https://user-images.githubusercontent.com/68942070/175926930-08758350-26c7-4abf-a612-c17d7e2ca0e5.png)
+
+From the regression model it can be concluded that:
+For example, with solar radiation of 100 lang, the maximum temperature is 75,68801 F. This temperature prediction is obtained by multiplying the sample size of solar radiation with the slope of the line and adding it to the magnitude of the line intercept.
+
+### Below is a model with X = ozone and Y = temperature:
+![image](https://user-images.githubusercontent.com/68942070/175927049-65efd955-d6fe-4615-956e-64cddef1c44a.png)
+
+![image](https://user-images.githubusercontent.com/68942070/175927077-5a20b22d-19c6-4a80-be74-384d77f61a1d.png)
+
+From the linear regression model obtained:
+
+* A = 0,2008
+* B = 69.4107
+
+If you are going to predict the value of Y (temperature), at a certain value of X (ozone), you can use the equation Y = A * X + B. For example, if you are looking for the value of Y with X = 100, then
+Y = 0.2008 * 100 + 69.4107 = 89.4907.
+
+So the maximum temperature prediction if the ozone concentration is 100 ppb, which is 89.4907 F (around the red dot in the picture). This temperature prediction is obtained by multiplying the magnitude of the ozone example with the slope of the line and adding it to the magnitude of the line intercept.
+
+
+
+
+
 
 
 
