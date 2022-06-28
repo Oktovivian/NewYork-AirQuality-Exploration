@@ -151,6 +151,10 @@ Y = 0.2008 * 100 + 69.4107 = 89.4907.
 
 So the maximum temperature prediction if the ozone concentration is 100 ppb, which is 89.4907 F (around the red dot in the picture). This temperature prediction is obtained by multiplying the magnitude of the ozone example with the slope of the line and adding it to the magnitude of the line intercept.
 
+## 7. Interpretation of the Obtained Model
+Based on the model obtained from linear regression modeling, it can be concluded that changes in ozone have a strong influence on changes in daily maximum temperature. The effect of ozone concentration on the daily maximum temperature is greater than the effect of solar radiation on the daily maximum temperature. From these results, the prediction of maximum temperature based on ozone concentration will be more accurate than prediction of maximum temperature based on solar radiation. The assumption we have made in number 3 is proven correct.
+
+
 
 
 
